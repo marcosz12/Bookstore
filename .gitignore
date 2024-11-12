@@ -1,0 +1,11 @@
+# Ignorar o diretório `.vs`
+.vs/
+
+# Ignorar arquivos com extensão `.log`
+*.log
+
+# Ignorar arquivos temporários
+*~
+
+# Ignorar arquivos específicos, como um arquivo de configuração
+config.json
