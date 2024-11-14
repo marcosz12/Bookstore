@@ -1,7 +1,9 @@
 ﻿using BookStore.Data;
 using BookStore.Models;
+using BookStore.Models.ViewModels;
 using BookStore.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace BookStore.Controllers
 {
@@ -24,6 +26,7 @@ namespace BookStore.Controllers
         {
             return View();
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Genre genre)
@@ -37,6 +40,7 @@ namespace BookStore.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
         public async Task<IActionResult> Delete(int? id)
         {
             if(id is null)
@@ -50,6 +54,17 @@ namespace BookStore.Controllers
             }
             return View(obj);
         }
+
+        public IActionResult Error(string message)
+        {
+            var viewModel = new ErrorViewModel
+            {
+                Message = message,
+                RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
+            };
+            return View(viewModel);
+        }
+
     }
 
 }

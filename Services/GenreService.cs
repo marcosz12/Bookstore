@@ -1,7 +1,5 @@
 ﻿using BookStore.Data;
 using BookStore.Models;
-using BookStore.Data;
-using BookStore.Models;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -13,11 +11,6 @@ namespace BookStore.Services
 
         public GenreService(BookstoreContext context)
         { _context = context; }
-
-        public List<Genre> FindAll()
-        {
-            return _context.Genres.ToList();
-        }
 
         // GET: Genres
         public async Task<List<Genre>> FindAllAsync()
