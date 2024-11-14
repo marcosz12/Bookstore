@@ -55,6 +55,13 @@ namespace BookStore.Controllers
             return View(obj);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
+        {
+
+        }
+
         public IActionResult Error(string message)
         {
             var viewModel = new ErrorViewModel

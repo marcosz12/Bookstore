@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hylPFqTjJYJ83ALtcMWlicZp+6+lWCfgY7p+jogcX5wKu9OA/C1ZzLlwLks1uquIk2qgS2ftFBP6o5F4+SctRA==",
+  "dgSpecHash": "vCDGwnsnf8+eNJCvYXOHHP4dB0aTbnyO1cSRTykQQQ2Ni9p535LnlZGgLL5Ix3Af6hxODqK5bFZijnnyRSOFYw==",
   "success": true,
-  "projectFilePath": "C:\\Dev\\BookStore\\BookStore.csproj",
+  "projectFilePath": "C:\\Users\\marcos.oberge\\Bookstore\\BookStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marcos.oberge\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\marcos.oberge\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
