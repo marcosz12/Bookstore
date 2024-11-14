@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 using BookStore.Data;
 using BookStore.Services;
 using Microsoft.EntityFrameworkCore;
 
-=======
->>>>>>> 17d4e652e56e5cbaae58e670a45efb8c7a06d8e3
 namespace BookStore
 {
     public class Program
@@ -12,7 +9,6 @@ namespace BookStore
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-<<<<<<< HEAD
             builder.Services.AddScoped<GenreService>();
 
             builder.Services.AddControllersWithViews();
@@ -31,30 +27,22 @@ namespace BookStore
                         )
                 );
             });
-=======
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
->>>>>>> 17d4e652e56e5cbaae58e670a45efb8c7a06d8e3
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
-<<<<<<< HEAD
-=======
                 app.UseExceptionHandler("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
->>>>>>> 17d4e652e56e5cbaae58e670a45efb8c7a06d8e3
                 app.UseHsts();
             }
 
             app.UseHttpsRedirection();
-<<<<<<< HEAD
 
-=======
->>>>>>> 17d4e652e56e5cbaae58e670a45efb8c7a06d8e3
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -68,8 +56,6 @@ namespace BookStore
             app.Run();
         }
     }
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 17d4e652e56e5cbaae58e670a45efb8c7a06d8e3
+
