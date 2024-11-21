@@ -43,25 +43,32 @@ namespace BookStore.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
-            if(id is null)
+            if (id is null)
             {
-                return RedirectToAction(nameof(Error), new {mensage = "Id não fornecido"});
+                return RedirectToAction(nameof(Error), new { message = "Id não fornecido" });
             }
             var obj = await _service.FindByIdAsync(id.Value);
-            if(obj is null)
+            if (obj is null)
             {
-                return RedirectToAction(nameof(Error), new { mensage = "Id não encontrado" });
+                return RedirectToAction(nameof(Error), new {message = "Id não fornecido"});
             }
             return View(obj);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete (int id)
         {
-
+            try
+            {
+                await _service.RemoveAsync(id);
+                return RedirectToAction(nameof(Index));
+            }
+            catch (IntegrityException ex)
+            {
+                return RedirectToAction(nameof(Error), new {message = ex.message}); 
+            }
         }
-
         public IActionResult Error(string message)
         {
             var viewModel = new ErrorViewModel
