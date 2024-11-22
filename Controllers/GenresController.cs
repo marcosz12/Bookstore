@@ -2,6 +2,7 @@
 using BookStore.Models;
 using BookStore.Models.ViewModels;
 using BookStore.Services;
+using BookStore.Services.Exeptions;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -66,7 +67,7 @@ namespace BookStore.Controllers
             }
             catch (IntegrityException ex)
             {
-                return RedirectToAction(nameof(Error), new {message = ex.message}); 
+                return RedirectToAction(nameof(Error), new {message = ex.Message}); 
             }
         }
         public IActionResult Error(string message)

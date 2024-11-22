@@ -1,5 +1,6 @@
 ﻿using BookStore.Data;
 using BookStore.Models;
+using BookStore.Services.Exeptions;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -45,7 +46,7 @@ namespace BookStore.Services
             }
             catch (DbUpdateConcurrencyException ex)
             {
-               throw new /*IntegrityException*/(ex.Message);
+               throw new IntegrityException(ex.Message);
             }
         }
     }
