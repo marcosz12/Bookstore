@@ -17,7 +17,7 @@ namespace BookStore.Services
                _context.Books.Any()
                )
             {
-                return; // Db já foi semeado.
+                return;
             }
 
             Genre g1 = new Genre(1, "Literatura Americana");
