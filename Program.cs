@@ -10,9 +10,10 @@ namespace BookStore
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddScoped<GenreService>();
-
             builder.Services.AddControllersWithViews();
-
+            builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<SeedingService>();
+            builder.Services.AddScoped<BookService>();
             builder.Services.AddDbContext<BookstoreContext>(options =>
             {
                 options.UseMySql(
@@ -27,9 +28,6 @@ namespace BookStore
                         )
                 );
             });
-
-            builder.Services.AddControllersWithViews();
-            builder.Services.AddScoped<SeedingService>();
             var app = builder.Build();
 
             if (!app.Environment.IsDevelopment())
