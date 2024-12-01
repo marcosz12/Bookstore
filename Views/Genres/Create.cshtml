@@ -1,5 +1,4 @@
-﻿@page
-@model BookStore.Models.Genre
+﻿@model BookStore.Models.Genre
 @{
 	ViewData["Title"] = "Adicionar Gênero Literário";
 }
@@ -17,14 +16,14 @@
 				<span asp-validation-for="Name" class="text-danger"></span>
 			</div>
 			<div class="form-group my-2">
-				<input  type="submit" value="Create" class="btn btn-primary"/>
+				<input type="submit" value="Create" class="btn btn-primary" />
 			</div>
 		</form>
 	</div>
 </div>
 
 <div>
-	<a asp-action="Index" class="text-primary">Voltar para a lista</a> 
+	<a asp-action="Index" class="text-primary">Voltar para a lista</a>
 </div>
 @section Scripts {
 	@{
