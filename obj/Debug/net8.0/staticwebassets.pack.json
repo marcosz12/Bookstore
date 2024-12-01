@@ -145,6 +145,10 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
+      "Id": "C:\\Users\\User\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min (1).css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min (1).css"
+    },
+    {
       "Id": "C:\\Users\\User\\Bookstore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },

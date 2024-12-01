@@ -6,48 +6,51 @@
 
 <h1>@ViewData["Title"]</h1>
 
+<h1 class="text-primary-emphasis">@ViewData["Title"]</h1>
+
 <div>
-    <h4 class="lead text-secondary">Detalhes do Gênero</h4>
+    <h4 class="lead text-secondary-emphasis">Detalhes do Gênero Literário</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2 h5">
-            @Html.DisplayNameFor(model => model.Name)
+        <dt class="col-sm-2 text-primary-emphasis">
+            @Html.DisplayNameFor(model => model.Name):
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10 text-primary-emphasis">
             @Html.DisplayFor(model => model.Name)
         </dd>
     </dl>
     <hr />
     <div class="panel panel-primary">
         <div class="panel-heading">
-            <h3 class="panel-title h5"></h3>
+            <h3 class="panel-title text-primary-emphasis">@Html.DisplayNameFor(model => model.Books)</h3>
         </div>
         <div class="panel-body">
-            <table class="table">
+            <table class="table table-hover">
                 <thead>
-                <tr>
-                    <th>@Html.DisplayNameFor(model => model.Books.FirstOrDefault().Title)</th>
-                    <th>@Html.DisplayNameFor(model => model.Books.FirstOrDefault().Price)</th>
-                    <th>@Html.DisplayNameFor(model => model.Books.FirstOrDefault().Author)</th>
-                    <th>@Html.DisplayNameFor(model => model.Books.FirstOrDefault().ReleaseYear)</th>
-                </tr>
+                    <tr>
+                        <th class="text-primary-emphasis">@Html.DisplayNameFor(model => model.Books.FirstOrDefault().Title)</th>
+                        <th class="text-primary-emphasis">@Html.DisplayNameFor(model => model.Books.FirstOrDefault().Price)</th>
+                        <th class="text-primary-emphasis">@Html.DisplayNameFor(model => model.Books.FirstOrDefault().Author)</th>
+                        <th class="text-primary-emphasis">@Html.DisplayNameFor(model => model.Books.FirstOrDefault().ReleaseYear)</th>
+                    </tr>
+
                 </thead>
                 <tbody>
                     @foreach (Book item in Model.Books)
                     {
                         <tr>
                             <td>
-                                <a asp-asp-controller="Books" asp-action="Details" asp-route-id="@item.Id">
+                                <a asp-controller="Books" asp-action="Details" asp-route-id="@item.Id" class="mb-0 text-primary">
                                     @Html.DisplayFor(modelItem => item.Title)
                                 </a>
                             </td>
-                            <td>
+                            <td class="text-primary-emphasis">
                                 @Html.DisplayFor(modelItem => item.Price)
                             </td>
-                            <td>
+                            <td class="text-primary-emphasis">
                                 @Html.DisplayFor(modelItem => item.Author)
                             </td>
-                            <td>
+                            <td class="text-primary-emphasis">
                                 @Html.DisplayFor(modelItem => item.ReleaseYear)
                             </td>
                         </tr>
@@ -55,10 +58,10 @@
                 </tbody>
             </table>
         </div>
-
     </div>
+
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
-    <a asp-action="Index">Voltar para lista</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="text-primary">Editar</a> |
+    <a asp-action="Index" class="text-primary">Voltar para a lista</a>
 </div>

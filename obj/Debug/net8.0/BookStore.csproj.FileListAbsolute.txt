@@ -535,7 +535,6 @@ C:\Users\User\Bookstore\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerati
 C:\Users\User\Bookstore\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-C:\Users\User\Bookstore\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\MySqlConnector.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\Newtonsoft.Json.dll
@@ -556,12 +555,9 @@ C:\Users\User\Bookstore\bin\Debug\net8.0\System.Composition.Hosting.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\System.Composition.Runtime.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\System.Composition.TypedParts.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-C:\Users\User\Bookstore\bin\Debug\net8.0\System.Drawing.Common.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\System.Formats.Asn1.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\User\Bookstore\bin\Debug\net8.0\System.Security.Permissions.dll
-C:\Users\User\Bookstore\bin\Debug\net8.0\System.Windows.Extensions.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\af\Humanizer.resources.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\ar\Humanizer.resources.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\az\Humanizer.resources.dll
@@ -701,10 +697,6 @@ C:\Users\User\Bookstore\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.re
 C:\Users\User\Bookstore\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\User\Bookstore\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\User\Bookstore\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\User\Bookstore\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
-C:\Users\User\Bookstore\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\User\Bookstore\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\User\Bookstore\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\User\Bookstore\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\User\Bookstore\obj\Debug\net8.0\staticwebassets\msbuild.BookStore.Microsoft.AspNetCore.StaticWebAssets.props
@@ -718,3 +710,11 @@ C:\Users\User\Bookstore\obj\Debug\net8.0\scopedcss\projectbundle\BookStore.bundl
 C:\Users\User\Bookstore\obj\Debug\net8.0\BookStore.csproj.Up2Date
 C:\Users\User\Bookstore\obj\Debug\net8.0\BookStore.genruntimeconfig.cache
 C:\Users\User\Bookstore\obj\Debug\net8.0\ref\BookStore.dll
+C:\Users\User\Bookstore\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\Bookstore\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\User\Bookstore\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\User\Bookstore\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\User\Bookstore\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\Bookstore\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+C:\Users\User\Bookstore\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Bookstore\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
